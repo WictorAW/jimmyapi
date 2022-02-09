@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/destinos",
+      "handler": "destino.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/destinos/count",
+      "handler": "destino.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/destinos/:id",
+      "handler": "destino.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/destinos",
+      "handler": "destino.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/destinos/:id",
+      "handler": "destino.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/destinos/:id",
+      "handler": "destino.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

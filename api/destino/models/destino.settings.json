@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "destinos",
+  "info": {
+    "name": "destino",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "posts": {
+      "collection": "post",
+      "via": "destinos",
+      "dominant": true
+    },
+    "parent": {
+      "model": "destino",
+      "via": "childs"
+    },
+    "childs": {
+      "collection": "destino",
+      "via": "parent"
+    }
+  }
+}
