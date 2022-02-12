@@ -18,8 +18,8 @@
       "type": "string"
     },
     "posts": {
-      "collection": "post",
       "via": "destinos",
+      "collection": "post",
       "dominant": true
     },
     "parent": {
