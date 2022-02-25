@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "destinos",
+  "collectionName": "paises",
   "info": {
-    "name": "destino",
+    "name": "pais",
     "description": ""
   },
   "options": {
@@ -18,21 +18,23 @@
       "type": "string"
     },
     "posts": {
-      "via": "destinos",
       "collection": "post",
+      "via": "paises",
       "dominant": true
     },
     "parent": {
-      "model": "destino",
+      "model": "pais",
       "via": "childs"
     },
     "childs": {
-      "collection": "destino",
+      "collection": "pais",
       "via": "parent"
     },
-    "paises": {
-      "via": "destinos",
-      "collection": "pais"
+    "destinos": {
+      "via": "paises",
+      "model": "destino",
+      "collection": "destino",
+      "dominant": true
     }
   }
 }

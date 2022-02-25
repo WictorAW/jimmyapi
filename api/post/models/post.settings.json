@@ -4,12 +4,15 @@
   "info": {
     "name": "post"
   },
-  
   "options": {
     "increments": true,
     "timestamps": true,
     "populateCreatorFields": true,
-    "publicAttributes": ["created_at", "updated_by","created_by"]
+    "publicAttributes": [
+      "created_at",
+      "updated_by",
+      "created_by"
+    ]
   },
   "attributes": {
     "title": {
@@ -71,7 +74,10 @@
     "destinos": {
       "via": "posts",
       "collection": "destino"
+    },
+    "paises": {
+      "via": "posts",
+      "collection": "pais"
     }
-    
   }
 }
