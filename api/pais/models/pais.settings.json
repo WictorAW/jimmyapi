@@ -17,11 +17,6 @@
     "slug": {
       "type": "string"
     },
-    "posts": {
-      "collection": "post",
-      "via": "paises",
-      "dominant": true
-    },
     "parent": {
       "model": "pais",
       "via": "childs"

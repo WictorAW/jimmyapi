@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "posts",
   "info": {
-    "name": "post"
+    "name": "post",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -12,7 +13,8 @@
       "created_at",
       "updated_by",
       "created_by"
-    ]
+    ],
+    "draftAndPublish": false
   },
   "attributes": {
     "title": {
@@ -34,7 +36,8 @@
         "videos"
       ],
       "plugin": "upload",
-      "required": false
+      "required": false,
+      "pluginOptions": {}
     },
     "categories": {
       "collection": "category",
@@ -69,15 +72,16 @@
         "images"
       ],
       "plugin": "upload",
-      "required": false
+      "required": false,
+      "pluginOptions": {}
     },
     "destinos": {
       "via": "posts",
       "collection": "destino"
     },
-    "paises": {
-      "via": "posts",
-      "collection": "pais"
+    "pais": {
+      "type": "string",
+      "required": false
     }
   }
 }
