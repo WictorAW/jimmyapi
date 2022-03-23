@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import CKEditor from '@ckeditor/ckeditor5-react';
-import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 import styled from 'styled-components';
+import ClassicEditor from "ckeditor5-build-strapi-wysiwyg";
 
 const Wrapper = styled.div`
   .ck-editor__main {
@@ -20,17 +20,27 @@ const configuration = {
     'bold',
     'italic',
     'link',
+    'blockQuote',
     'bulletedList',
     'numberedList',
     '|',
     'indent',
     'outdent',
+    'alignment',
     '|',
-    'blockQuote',
-    'insertTable',
     'mediaEmbed',
+    '|',
+    'image',
+    'imageInsert',
+    'imageCaption',
+    'imageResize',
+    '|',
     'undo',
     'redo',
+    'fontSize',
+    'fontColor',
+    'fontFamily',
+    'list',
   ],
 };
 

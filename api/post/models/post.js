@@ -11,10 +11,12 @@ module.exports = {
             if (data.title) {
                 console.log(data.title.toLowerCase());
                 data.slug = slugify(data.title.toLowerCase());
+                data.pais = slugify(data.pais.toLowerCase());
             }
         },
         beforeUpdate: async (params, data) => {
             data.slug = slugify(data.title.toLowerCase());
+            data.pais = slugify(data.pais.toLowerCase());
         },
     },
 };

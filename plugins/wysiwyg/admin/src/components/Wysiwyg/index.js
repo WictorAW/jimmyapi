@@ -15,6 +15,7 @@ const Wysiwyg = ({
   onChange,
   value,
 }) => {
+  console.log(value)
   const [isOpen, setIsOpen] = useState(false);
   let spacer = !isEmpty(inputDescription) ? <div style={{ height: '.4rem' }} /> : <div />;
 
