@@ -40,8 +40,8 @@
       "pluginOptions": {}
     },
     "categories": {
-      "collection": "category",
-      "via": "posts"
+      "via": "posts",
+      "collection": "category"
     },
     "related_posts": {
       "collection": "post"
@@ -81,6 +81,9 @@
     "pais": {
       "type": "string",
       "required": false
+    },
+    "googleMaps": {
+      "type": "string"
     }
   }
 }
