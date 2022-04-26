@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "contents",
+  "info": {
+    "name": "Content",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "Conteudo": {
+      "type": "richtext"
+    }
+  }
+}
