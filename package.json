@@ -15,6 +15,8 @@
     "@strapi/provider-upload-aws-s3": "^4.1.0",
     "ckeditor5-build-strapi-wysiwyg": "^2.1.0",
     "knex": "<0.20.0",
+    "pg": "^8.7.3",
+    "pg-connection-string": "^2.5.0",
     "slugify": "^1.4.5",
     "sqlite3": "^5.0.0",
     "strapi": "3.6.8",
@@ -28,11 +30,11 @@
     "strapi-provider-upload-aws-s3": "^3.6.8",
     "strapi-utils": "^3.6.8"
   },
-  "author": {
-    "name": "A Strapi developer"
-  },
+  "author": "A Strapi developer",
   "strapi": {
     "uuid": "7a9d5a60-459a-4cb7-91b2-96bfadbdef42"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "main": "index.js",
+  "repository": "git@github.com:WictorAW/jimmyapi.git"
 }
